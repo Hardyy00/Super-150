@@ -11,12 +11,12 @@ public class PowerSet {
         // here each number represents a unique combination, so if the ith bit of current number is 1, then
         // add the character to the current subsequence
 
-        for(int i=0;i<=tot;i++){
+        for(int i=0;i<tot;i++){
 
             StringBuilder build = new StringBuilder();
 
             for(int j=0;j<s.length();j++){
-                
+
                 if((i & (1 << j)) != 0){
                     build.append(s.charAt(j));
                 }
